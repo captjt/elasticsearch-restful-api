@@ -1,3 +1,6 @@
 # Development
 env
 .idea
+
+*.py[co]
+*.DS_*
