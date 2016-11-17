@@ -14,8 +14,8 @@ parser = reqparse.RequestParser()
 
 
 class Player(Resource):
-    """Search Class to query nba_teams based on the query string sent through
-    a GET request
+    """Player Class to query player data based on search parameters in the URL
+    sent through a get request
 
     :extends Resource
     :returns: a JSON response
@@ -48,8 +48,8 @@ class Player(Resource):
 
 
 class AllPlayers(Resource):
-    """SchemaList Class is the Resource for fetching all players in the elastic
-    search index nba_teams
+    """AllPlayers Class is the Resource for fetching all players in the elastic
+    search index
 
     :extends Resource
     :returns: a JSON response

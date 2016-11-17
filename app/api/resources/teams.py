@@ -14,8 +14,8 @@ parser = reqparse.RequestParser()
 
 
 class Team(Resource):
-    """Schema Class is the Resource for a single table schema
-    in a database
+    """Team Class is the Resource for a querying and searching the team data in
+    an elasticsearch instance
 
     :extends Resource
     :returns: a JSON response
@@ -48,8 +48,8 @@ class Team(Resource):
 
 
 class AllTeams(Resource):
-    """SchemaList Class is the Resource for fetching all table schemas
-    in a database
+    """AllTeams Class is the Resource for fetching all team data in an
+    elasticsearch instance -- limited to 100 response hits
 
     :extends Resource
     :returns: a JSON response

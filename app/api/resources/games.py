@@ -14,8 +14,8 @@ parser = reqparse.RequestParser()
 
 
 class Game(Resource):
-    """Schema Class is the Resource for a single table schema
-    in a database
+    """Game Class is the Resource for a searching game data in an elasticsearch
+    instance
 
     :extends Resource
     :returns: a JSON response
@@ -48,8 +48,8 @@ class Game(Resource):
 
 
 class AllGames(Resource):
-    """SchemaList Class is the Resource for fetching all table schemas
-    in a database
+    """AllGames Class is the Resource for fetching all of the game data limited
+    to 100 response hits from an elasticsearch instance
 
     :extends Resource
     :returns: a JSON response
